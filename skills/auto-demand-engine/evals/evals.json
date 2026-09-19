@@ -1,0 +1,19 @@
+{
+  "skill_name": "auto-demand-engine",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Is the car market going to pick up in the next 6 months? Policy rate has been cut and petrol is stable.",
+      "expected_output": "Assembles PAMA monthly sales and drivers with sources, tests lags, gives a range not a point, states assumptions, words relationships as association, names missing series.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Using the Economic Survey transport chapter in data/, work out cars per 1000 people and how fast the car parc is growing",
+      "expected_output": "Extracts tables 13.3/13.4, flags the 2018-19 base-year break and cumulative-registration overstatement, needs population (not yet supplied) and says so, separates calendar vs fiscal years.",
+      "files": [
+        "data/13_Transport_and_Communications.pdf"
+      ]
+    }
+  ]
+}

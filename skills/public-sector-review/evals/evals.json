@@ -1,0 +1,49 @@
+{
+  "skill_name": "public-sector-review",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "cold-state-body",
+      "prompt": "We're going for the State Bank of Pakistan's communications account. I've never worked on a central bank. Can you research them and the sector so we've got something solid before we start on strategy?",
+      "expected_output": "A sourced review document covering mandate and enabling statute, what the organisation publishes, the institutional environment, comparable central banks, and open questions.",
+      "files": [],
+      "expectations": [
+        "Reads the annual report before characterising the website",
+        "Locates the enabling statute or governing act and states what it requires and protects",
+        "Searches the competition authority and the auditor general explicitly, not only a general web search",
+        "Identifies the sector association or equivalent, or records its absence",
+        "Distinguishes figures read directly from figures taken from search summaries",
+        "Proposes institutional measures rather than consumer awareness metrics",
+        "Contains no language that characterises the client as negligent"
+      ]
+    },
+    {
+      "id": 2,
+      "eval_name": "website-understates-client",
+      "prompt": "Pakistan Reinsurance Company - their website looks like nothing has been updated in years. Can you put together a background note on them for the pitch?",
+      "expected_output": "A review that finds the annual report, quotes the stated vision and mission verbatim, reports the current AA+ rating, and frames the stale website as a finding about the website rather than about the organisation.",
+      "files": [],
+      "expectations": [
+        "Finds and quotes the vision, mission, strategy and objectives from the annual report",
+        "Reports the current IFS rating rather than repeating the website's 2012 reference",
+        "States that the website understates what the annual report shows",
+        "Does not conclude the organisation lacks a corporate idea",
+        "Identifies the compulsory cession and the SRO that grants first right of refusal"
+      ]
+    },
+    {
+      "id": 3,
+      "eval_name": "verify-claimed-share",
+      "prompt": "The client's site says they provide 45% of reinsurance protection in the country. Can you check that before it goes in the deck?",
+      "expected_output": "A verification that checks the claim against association and competition authority data, reports the contradiction, and recommends not using the figure.",
+      "files": [],
+      "expectations": [
+        "Checks the claim against at least one independent source rather than accepting it",
+        "Surfaces the Competition Commission figure of about 25-27 percent",
+        "Recommends against using the 45 percent figure in any deliverable",
+        "States the denominator for any share figure it does present",
+        "Frames the discrepancy as a question for the client rather than as a client error"
+      ]
+    }
+  ]
+}

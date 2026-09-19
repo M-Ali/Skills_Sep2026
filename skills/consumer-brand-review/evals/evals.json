@@ -1,0 +1,47 @@
+{
+  "skill_name": "consumer-brand-review",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "cold-telco",
+      "prompt": "We've been invited to pitch for Jazz. I need to understand the Pakistani telecom category properly - subscribers, share, what everyone's saying - before we go anywhere near creative.",
+      "expected_output": "A sourced review sizing the category from regulator data, covering competitor commercial position and communications, with the message territory and open questions.",
+      "files": [],
+      "expectations": [
+        "Sizes the category from telecom regulator statistics before discussing advertising",
+        "Reports subscribers, ARPU or penetration with the source and period stated",
+        "Reads annual report or investor material for the client and main competitors",
+        "Covers both the commercial pass and the communications pass",
+        "Distinguishes figures read directly from figures taken from search summaries",
+        "Does not present share of voice from an unequal or capped sample"
+      ]
+    },
+    {
+      "id": 2,
+      "eval_name": "verify-claimed-share",
+      "prompt": "Client says they're the number two life insurer by market share. Can you verify that and tell me what basis they're using?",
+      "expected_output": "A verification that locates official association or regulator data, computes the share, states the denominator, and reports whether the claim holds.",
+      "files": [],
+      "expectations": [
+        "Locates association or regulator market data rather than accepting the claim",
+        "States the denominator used and notes that a different base gives a different answer",
+        "Distinguishes premium written from premium earned or net premium where relevant",
+        "Reports clearly whether the claim is confirmed, unreconcilable or contradicted"
+      ]
+    },
+    {
+      "id": 3,
+      "eval_name": "creative-first-risk",
+      "prompt": "Have a look at what the banks are all advertising at the moment and tell me where the gap is.",
+      "expected_output": "A category creative reading that is anchored to a stated sample frame and to category size data, identifying convergence and a vacant territory.",
+      "files": [],
+      "expectations": [
+        "Sizes or characterises the category from regulator or association data before judging the creative",
+        "States the sample frame - how many assets, over what period, from which sources",
+        "Identifies convergence across brands as well as individual claims",
+        "Names a vacant territory rather than only describing what is present",
+        "Labels audience reads as inference from casting rather than as fact about buyers"
+      ]
+    }
+  ]
+}

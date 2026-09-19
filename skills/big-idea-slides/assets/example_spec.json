@@ -1,0 +1,122 @@
+{
+  "brand": "PTCL",
+  "out": "PTCL_big_idea_section.pptx",
+  "requires_commitments": true,
+
+  "divider": {
+    "title": "The Big Idea",
+    "subtitle": "Consumer insight  +  Category insight  +  Brand insight",
+    "subtitle2": "Three single lines, combined into one organising thought."
+  },
+
+  "insights": {
+    "consumer": {
+      "title": "What customers feel, that the category ignores",
+      "from": "FROM THE CONSUMER PULSE",
+      "line": "Customers can live with a line that sometimes fails, but not with a provider they cannot hold to its word - on the bill, the fault, or the exit.",
+      "short": "Customers cannot hold the provider to its word - on the bill, the fault, or the exit.",
+      "evidence": [
+        "\"These people are frauds. First they install it cheap, then every third month they keep increasing the bill.\"",
+        "\"Whenever a problem arises you have to fall at their feet, and they become Pharaoh.\"",
+        "\"If you want to disconnect, you have to pay the whole of the following month too. Where in the world does this happen, except PTCL?\"",
+        "The commenter who rates PTCL 10/10 and gets 107 Mbps has still seen his bill go from Rs 4,000 to Rs 7,250."
+      ],
+      "panel_title": "What the language tells us",
+      "panel": [
+        "The words are fraud, chor, zulm, Pharaoh - the language of being taken advantage of, not of slow service.",
+        "Even satisfied customers are repriced, so the problem is what the company does, not how the line performs.",
+        "Nobody in 976 comments says PTCL is fair, or on their side."
+      ],
+      "source": "Source: 976 YouTube comments, all 92 PTCL mentions read. Self-selected corpus - not a satisfaction measure; figures are commenters' statements, not verified facts."
+    },
+
+    "category": {
+      "title": "What everyone else does, and what it leaves open",
+      "from": "FROM COMPETITORS' SOCIAL PAGES",
+      "line": "The category sells the moment of signing up - speed, price, a newly fiberised street - and goes silent on what happens after, which is exactly where customers are losing faith.",
+      "short": "The category sells the sign-up and goes silent on what happens after.",
+      "evidence": [
+        "Sign-up messaging is the convention: price and bundles 31 posts, devices 14, speed 11, coverage and new areas 11.",
+        "After-sale care is almost absent: service and support 15 of 336 posts, reliability 8.",
+        "68% of posts prove nothing; not one cites an independent speed test.",
+        "Only 19% answer a customer objection - PTCL answers none of its 24.",
+        "No post in 336 promises price stability or being answerable."
+      ],
+      "panel_title": "Why the category behaves this way",
+      "panel": [
+        "Fixed broadband is 2.5% of Pakistan's 150m broadband subscriptions. Brands are growing a footprint, so their ads announce availability.",
+        "PTCL has no footprint problem - this default suits it least.",
+        "The space is not empty because it failed. Customers want it: StormFiber's most praised behaviour is \"REPLIES ON FACEBOOK... AT 3AM\"."
+      ],
+      "source": "Source: 336 Instagram posts across 14 brands, coded (workspace/scan_telco/codes.csv); PTA Annual Report 2025, figures as of June 2025."
+    },
+
+    "brand": {
+      "title": "What PTCL has, and what it faces",
+      "from": "FROM THE CLIENT BRIEF",
+      "tag": "PROVISIONAL",
+      "line": "PTCL has what no rival can buy - generations inside Pakistani households and a network that reaches where others don't - but customers experience that reach as being trapped, not as commitment.",
+      "short": "Generations in Pakistani homes and unmatched reach - currently heard as being trapped.",
+      "evidence": [
+        "The asset: \"relationships with some of the nation's oldest and most loyal customers\" and a footprint \"few competitors can replicate\" (brief p3, p11).",
+        "The problem: PTCL leads on awareness, consideration and usage, but is 2nd on turning awareness into consideration, behind StormFiber (brief p6).",
+        "How reach is heard: \"He had no option, that is why he got PTCL installed.\" / \"There is no other provider here.\""
+      ],
+      "panel_title": "Where the brief and the customer disagree",
+      "panel": [
+        "Brief: PTCL is \"more loved than it is trusted to perform\". Comments: performance is acceptable where the line is good; what has broken is trust in intentions.",
+        "Brief: value and billing is 2% of consideration drivers. Comments: billing is the angriest grievance and a reason for leaving.",
+        "The brief's own decision-maker stays when PTCL feels \"fair, and quietly on their side\" (p7)."
+      ],
+      "source": "Source: FixedLine PTCL x Creative Brief, 5 Sep 2026. PROVISIONAL: underlying tracking, churn and segmentation data is held by PTCL and the RFQ was not supplied."
+    }
+  },
+
+  "idea": {
+    "title": "Three insights, one organising thought",
+    "line": "PTCL is the connection you can hold to its word.",
+    "meaning": "PTCL's reach and decades in Pakistani homes stop being a trap and become an obligation: because we are the one who is always there, we owe you - and we say exactly what.",
+    "test": "remove any one insight and the idea fails - without the consumer it is a corporate virtue, without the category it is table stakes, without the brand it is StormFiber's reply speed."
+  },
+
+  "strategy": {
+    "title": "Strategy statement and comms platform",
+    "statement": "Re-frame PTCL from the provider people feel stuck with to the one that answers to them, by publicly committing to fair terms on price, faults and exit, proving them in the open, and showing up where customers talk.",
+    "platform": "THE CONNECTION THAT ANSWERS TO YOU.",
+    "why": {
+      "relevant": "answers the most intense language in the corpus - fraud, Pharaoh, the exit penalty.",
+      "distinctive": "none of 336 posts promises price stability or being answerable.",
+      "ownable": "only generations of relationships plus national reach make \"always there\" an obligation, not lock-in."
+    },
+    "alternatives": [
+      {"name": "A. The connection you can hold to its word.", "recommended": true,
+       "tradeoff": "Built on all three insights. Needs real commercial commitments."},
+      {"name": "B. The dependable foundation of Pakistan's digital life.",
+       "tradeoff": "The brief's wording. Any fibre brand could say it, and customers calling PTCL \"Pharaoh\" will not accept \"dependable\" as a claim."},
+      {"name": "C. Legacy carried into the future.",
+       "tradeoff": "Ignores the consumer. Heritage is the most crowded territory (13 of 14 brands) and sits close to the brief's patriotic-cliché guardrail."}
+    ],
+    "swap_test": "StormFiber can claim the reply speed. It cannot claim reach-as-obligation to generations of households - lead with that."
+  },
+
+  "commitments": {
+    "title": "What it asks of PTCL, and how it lives in media",
+    "asks_title": "What PTCL must commit to - before any line is written",
+    "asks": [
+      {"name": "Price notice", "detail": "No price change without advance notice, for a stated period."},
+      {"name": "Fault response", "detail": "A published response time customers can hold PTCL to."},
+      {"name": "A clean exit", "detail": "Remove the following-month charge on disconnection."},
+      {"name": "Answerability", "detail": "A staffed response presence in social and comment channels."},
+      {"name": "Proof", "detail": "Publish real speed results - nobody in the category does."}
+    ],
+    "channel_insight": "The purchase decision has moved out of PTCL's advertising and into public comment threads.",
+    "media_principles": [
+      {"name": "Be in the thread.", "detail": "Answer where the decision is made - YouTube, and Facebook's 1.3M."},
+      {"name": "Prove, never assert.", "detail": "Every claim points to a published term, time or result."},
+      {"name": "Customer communications are media.", "detail": "The bill, the SMS and the app come first."},
+      {"name": "Let owners speak.", "detail": "Real customers, conditions stated - conditional testimony is believed."},
+      {"name": "Digital-first.", "detail": "Mass media amplifies what is already visible online."}
+    ],
+    "conclusion": "If PTCL will not make at least the first three commitments, recommend B and state the trade-off. Do not run A as a campaign claim without them."
+  }
+}

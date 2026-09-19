@@ -1,0 +1,19 @@
+{
+  "skill_name": "auto-consumer-engine",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "data/SUV_comments_aug2026.xlsx has ~1300 YouTube comments on an SUV review. What's stopping people from buying these SUVs? Hyundai wants to know about Tucson specifically.",
+      "expected_output": "Checks corpus (rows, columns, off-topic praise, languages), uses comment-analysis, codes to the barrier taxonomy, counts per theme for Tucson, quotes verbatim, states corpus limits, writes or describes consumer signals.",
+      "files": [
+        "data/SUV_comments_aug2026.xlsx"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "can you track what people complain about with the Fronx every month from pakwheels forum + youtube",
+      "expected_output": "Sets up a repeatable monthly method: fixed sources, taxonomy, stance, theme_share_pct signals with mom comparison, minimum counts, notes taxonomy changes in changelog.",
+      "files": []
+    }
+  ]
+}

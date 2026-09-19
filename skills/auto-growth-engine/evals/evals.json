@@ -1,0 +1,17 @@
+{
+  "skill_name": "auto-growth-engine",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Pull together everything we have for Hyundai this month and tell me what they should do about Tucson.",
+      "expected_output": "Loads signals with --client hyundai, finds only Market signals exist, says the Growth Engine needs two engines, gives only what market signals support, no invented consumer/dealer numbers.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Here are market, consumer and competition signal files for Suzuki for Aug 2026 in workspace/out/signals. Write the recommendations page.",
+      "expected_output": "Checks signals for client suzuki, joins on model/geography/period, keeps only multi-engine combinations, ranks by units at stake x engines agreeing, writes each in the template with signal ids, investigation not cause, confidence.",
+      "files": []
+    }
+  ]
+}

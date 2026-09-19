@@ -1,0 +1,17 @@
+{
+  "skill_name": "auto-competition-engine",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Haval and Kia keep running offers. For Hyundai, I need what competitors in the SUV segment posted and offered in August and how their share of voice compares to their sales share.",
+      "expected_output": "Defines competitor set incl. non-PAMA Kia, runs creative scan for posts/offers, computes SOV and SOM from Market signals, flags no-SOM for non-PAMA brands, logs promos as price moves, caveat that SOV is visible output not spend.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "start a used-car price and on money tracker for Alto, Cultus, Swift using PakWheels",
+      "expected_output": "Raises PakWheels terms of service before scraping, defines fixed monthly sample by model/year/variant with sample size and URL/date, used_price_pkr and on_money_pkr signals.",
+      "files": []
+    }
+  ]
+}

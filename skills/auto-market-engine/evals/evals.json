@@ -1,0 +1,39 @@
+{
+  "skill_name": "auto-market-engine",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I've put this month's PAMA figures in D:/personal/BHT_Sep26/data/public/pama/sales_aug2026.csv. Give me the market picture for August 2026 - who gained share, which segments moved, anything Suzuki should worry about.",
+      "expected_output": "Runs market validate then market monitor, reads the notes, reports 3-5 findings citing signal ids, caveats on PAMA coverage and small bases, gives xlsx and signals paths; no hand-typed numbers.",
+      "files": [
+        "sales_aug2026.csv (made-up fixture)"
+      ],
+      "assertions": [
+        "Ran `autopulse market validate` on the file before building the monitor",
+        "Produced the monitor xlsx and a signals CSV (versioned -vN names) in the outputs folder",
+        "Headline numbers match the monitor output (e.g. Suzuki 53.5% share, -1.0 pts vs July, +4.0 pts vs Aug 2025; SUV segment +79.6% MoM) with none invented",
+        "Flags that the file's source column says 'made-up test', so these are not real PAMA figures",
+        "Calls it the PAMA-reported market or otherwise notes non-PAMA brands and imports are missing",
+        "Treats small bases carefully (Jetour 60 units, no prior month) instead of headlining a growth %",
+        "Cites signal ids (or the signals file) behind the findings"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "downloaded five-years-12.xlsx from the PAMA site (it's in BHT_Sep26/data). whats Hyundai's share of jeeps & pickups in 2025-26 vs last year? need it for a deck tomorrow",
+      "expected_output": "Opens and checks the workbook, recognises the importer is not built, does not hand-copy dozens of numbers into a share table; either offers/builds the importer or computes from the file with code and checks against the sheet totals, flags PAMA coverage (no non-members) and grouping changes.",
+      "files": [
+        "data/five-years-12.xlsx"
+      ],
+      "assertions": [
+        "States Hyundai's 2025-26 share of jeeps & pickups sales as 18.8% (9,530 of 50,814)",
+        "States 2024-25 share as 22.3% (8,000 of 35,820) and the change as about -3.5 points",
+        "Notes Hyundai units still grew (~+19%) while share fell",
+        "Lists the Hyundai models counted (Tucson, Porter, Santa Fe) and notes the section mixes SUVs with pickups/LCVs",
+        "Computed with code from the workbook and reconciled against the section TOTAL row, not hand-copied",
+        "Notes PAMA covers members only (e.g. Kia, Changan, MG SUVs absent), so it is share of the PAMA-reported segment",
+        "Uses sales (not production) for share, or says which it used"
+      ]
+    }
+  ]
+}

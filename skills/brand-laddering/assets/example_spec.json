@@ -1,0 +1,90 @@
+{
+  "client": "PTCL",
+  "category": "fixed broadband",
+  "out": "PTCL_brand_ladder_section.pptx",
+
+  "divider": {
+    "title": "The Brand Meaning Ladder",
+    "subtitle": "A simple way to understand how consumers see a brand - from what it is and does, to what it means to them",
+    "direction": "From functional benefits → to emotions → to values and purpose."
+  },
+
+  "placement": {
+    "headline": "Levels of branding: where the category is, and where PTCL is talking",
+    "standfirst": "Each brand sits on the level most of its coded posts occupy (mean level in brackets). Placement computed from the classified posts, not asserted.",
+    "omitted": {},
+    "rows": [
+      {"level": 6, "name": "Mission / philosophy", "brands": [], "note": "Nobody in this category."},
+      {"level": 5, "name": "Human values / way of life", "brands": [], "note": "Stated only in one-off CSR posts; no brand's communication lives here."},
+      {"level": 4, "name": "Psychological territory", "brands": [], "note": "Transworld, Ufone - household truths, nostalgia, relatability (not yet classified post by post).", "marker": "The differentiation gap"},
+      {"level": 3, "name": "Product benefits", "brands": [], "note": "Tapmad, Multinet, Jazz Business - problem-led, what it does for you (not yet classified post by post).", "marker": "Where PTCL must earn"},
+      {"level": 2, "name": "Product attributes", "brands": [], "note": "StormFiber, Zong, Optix, Jazz - speed, price and coverage tiles (not yet classified post by post).", "marker": "Where the category sits"},
+      {"level": 1, "name": "Name only", "brands": ["PTCL"], "note": "heritage as recognition (79 years, national days) plus pride through hockey and esports.", "marker": "Where PTCL is talking"}
+    ],
+    "conclusion": "PTCL talks in recognition and national pride while customers judge the category on benefits - and the ladder does not let a brand skip the rungs between.",
+    "footnote": "Framework: Brand Meaning Ladder. Placement = modal level across each brand's classified posts; mean in brackets (ladder_levels.csv). Competitor rows are descriptive until their posts are classified."
+  },
+
+  "factor_list": {
+    "headline": "The Brand Meaning Ladder for fixed broadband: the factors at each level",
+    "standfirst": "Current = seen in the category's 336 posts.  Potential = relevant to connectivity, not yet claimed.  Unsupported = little link to connectivity.  † = added for this category.",
+    "rows": [
+      {"level": 6, "name": "Purpose / philosophy",
+       "current": ["No clear purpose evidence in the category"],
+       "potential": ["Democratizing technology", "Connecting people and communities", "Enabling economic opportunity", "Improving education", "Empowering people to create a better future", "Changing the way people think about a category"],
+       "unsupported": ["Making healthcare more accessible", "Creating a healthier generation", "Making sustainable living accessible"]},
+      {"level": 5, "name": "Human values / way of life",
+       "current": ["National development", "Responsibility", "Innovation"],
+       "potential": ["Progress", "Family wellbeing", "Freedom", "Equality", "Ambition", "Entrepreneurship", "Inclusion", "Community", "Modernity", "Self-improvement", "Education", "Opportunity", "Togetherness", "Independence", "Social mobility", "Sustainability", "Fairness †"],
+       "unsupported": ["Healthy living"]},
+      {"level": 4, "name": "Psychological associations",
+       "current": ["Pride", "Modernity", "Aspiration", "Belonging", "Achievement", "Modern consumer"],
+       "potential": ["Smart choice", "Intelligent consumer", "Control", "Confidence", "Security", "Empowerment", "Independence", "Freedom", "Status", "Sophistication", "Optimism", "Caring", "Progressiveness", "Family protector", "Responsible parent", "Successful professional", "Forward-looking person", "Respected as a customer †"],
+       "unsupported": ["Adventure"]},
+      {"level": 3, "name": "Product benefits",
+       "current": ["Provides better connectivity", "Provides reliability", "Enables productivity", "Provides convenience", "Entertainment at home †", "Value for money †"],
+       "potential": ["Saves time", "Reduces effort", "Makes a task easier", "Improves performance", "Provides peace of mind", "A bill that stays predictable †", "A fault fixed without pleading †", "Leaving without a penalty †"],
+       "unsupported": []},
+      {"level": 2, "name": "Product attributes",
+       "current": ["Speed", "Fibre infrastructure", "Network coverage", "Price", "Data packages", "Technology", "Customer service channels", "Enterprise connectivity", "Devices †", "Content and gaming packs †"],
+       "potential": ["4G/5G / FWA capability", "Digital self-service", "Voice services", "Distribution", "Proof of speed - independent tests †", "Published price terms †", "Published fault-response time †"],
+       "unsupported": ["Product ingredients", "Physical characteristics"]},
+      {"level": 1, "name": "Product identification",
+       "current": ["Brand name", "Logo", "Visual identity", "Heritage", "Presence in the category", "Availability", "Recognition"],
+       "potential": ["Distinctive assets", "Recall", "Brand familiarity", "Brand awareness"],
+       "unsupported": ["Packaging"]}
+    ],
+    "conclusion": "Current factors cluster at levels 1-3. The unclaimed territory sits at levels 4-6 - but higher is not better: a factor is only worth owning if it is relevant, credible, distinctive and defensible.",
+    "footnote": "Framework: Brand Meaning Ladder - factor lists per level. Current factors: 336 coded Instagram posts, 14 brands (codes.csv). † additions: category scan and consumer conversation analysis."
+  },
+
+  "category_evidence": {
+    "headline": "How the Brand Meaning Ladder works in fixed broadband",
+    "standfirst": "The factors that populate each level in this category - from 336 competitor posts and 976 customer comments. Levels are depth of meaning, not stages: higher is not better.",
+    "rows": [
+      {"level": 6, "name": "Purpose / philosophy", "brands_claim": "No brand states a purpose. Social work appears as one-off CSR and awareness-day posts, not as a reason the brand exists.", "customers_judge": "Not raised as purpose. Unequal access surfaces only as a complaint: \"there is no other provider here\".", "open": "Digital inclusion; connecting village to city; enabling livelihoods."},
+      {"level": 5, "name": "Values / way of life", "brands_claim": "National development and social responsibility, mostly through national days and CSR. Few posts state an actual belief.", "customers_judge": "Whether they are dealt with straight - claims, packages and bills that match what they get.", "open": "Fairness and straight dealing; inclusion; progress; togetherness."},
+      {"level": 4, "name": "Psychological", "brands_claim": "Pride through sport and celebrity (hockey, esports); nostalgia and belonging (Ufone, Transworld's 1947); modern and aspirational (devices 14, innovation 12); gamer identity (10).", "customers_judge": "Smart choice (\"more speed for less\"); respected when answered; trapped when there is \"no option\".", "open": "In control; respected as a customer; confident, smart chooser."},
+      {"level": 3, "name": "Benefits", "brands_claim": "Business keeps running (50: Multinet 20, Jazz Business 16, Wateen 13); entertainment at home (49: Tapmad 23, Shoq 14); value for money (31: Zong 9, Optix 7); help when needed (15); fewer disruptions (8).", "customers_judge": "Work, study and stream without breaks; a fault fixed quickly; a bill that stays predictable.", "open": "A bill that does not change without notice; a fault fixed without pleading; a clean exit."},
+      {"level": 2, "name": "Attributes", "brands_claim": "Price, packages and bundles (31); devices (14: Jazz 7, PTCL 4); coverage and new areas (11: StormFiber 9); speed and fibre (11: Nayatel 4, Optix 3).", "customers_judge": "Mbps delivered versus Mbps sold; the actual monthly bill; availability on my street.", "open": "Proof - 0 of 336 posts cite a speed test; published price terms; a published fault-response time."},
+      {"level": 1, "name": "Identification", "brands_claim": "Name, logo and distinctive assets; heritage and national days (59 posts, 13 of 14 brands); sponsorships and awards; corporate announcements (61).", "customers_judge": "Which brands people name when they shop: PTCL 92, Ufone 89, Jazz 41, Zong 35, StormFiber 13 mentions.", "open": "Table stakes - every brand is already past this level."}
+    ],
+    "conclusion": "The category talks at levels 1-3 - who we are, what we have, what you can watch or run. Nobody makes the relationship itself a benefit, and that is where customers judge hardest.",
+    "footnote": "Framework: Brand Meaning Ladder. Counts = posts whose main claim is that factor, of 336 (codes.csv); a claim can sit at more than one level, so counts show where factors appear, not per-level totals."
+  },
+
+  "client_ladder": {
+    "headline": "{client}'s Brand Meaning Ladder: the category's factors, and where to stand",
+    "standfirst": "{client} says = its {n} coded posts, classified by level (mode L{mode}, mean {mean:.1f}). Heard = 976 YouTube comments. Higher is not better - the target is the deepest level {client} can prove.",
+    "rows": [
+      {"level": 6, "name": "Purpose / philosophy", "in_use": "None - no brand states a purpose in 336 posts.", "open": "Connecting every Pakistani home, village to city, on fair terms (opportunity only).", "says": "", "heard": "NO CLEAR PURPOSE EVIDENCE.", "placement": "Not now", "placement_sub": "no permission yet"},
+      {"level": 5, "name": "Values / way of life", "in_use": "Social responsibility / CSR; national development.", "open": "Fairness and straight dealing; equal access for villages.", "says": "water CSR, Humanitarian Day.", "heard": "Not established.", "placement": "Later", "placement_sub": "fairness, once proven"},
+      {"level": 4, "name": "Psychological", "in_use": "National pride via sport and celebrity; aspiration and modernity; belonging and nostalgia (Transworld, Ufone).", "open": "Being in control; being respected as a customer; the smart choice.", "says": "hockey and esports pride.", "heard": "Negative - \"no option\", not answered.", "placement": "Next", "placement_sub": "respected, in control"},
+      {"level": 3, "name": "Benefits", "in_use": "Entertainment at home (49); business continuity (50); value for money (31); help when needed (15).", "open": "A bill that does not change without notice; a fault fixed without pleading; a clean exit.", "says": "\"the one constant across every home\".", "heard": "Weak - it works \"if your location is good\".", "placement": "", "placement_sub": "fair terms you can count on", "target": true},
+      {"level": 2, "name": "Attributes", "in_use": "Price and bundles (31); device bundles (14); speed tiers (11); coverage and new areas (11).", "open": "Proof - 0 posts cite a speed test; a published fault-response time; published price terms.", "says": "iPhone/MacBook retail, Flash Fiber.", "heard": "Mixed - 100+ Mbps where good; speed below package, bills rising.", "placement": "Prove", "placement_sub": "publish terms and speed"},
+      {"level": 1, "name": "Identification", "in_use": "Name, logo, heritage and national days (59 posts, 13 of 14 brands); sponsorships.", "open": "Table stakes - nothing left to claim.", "says": "79-years teasers, national days, awards.", "heard": "Strong - most-mentioned brand; Flash Fiber asked for by name.", "placement": "Hold", "placement_sub": "heritage = recognition"}
+    ],
+    "conclusion": "Place PTCL at Level 3: fair terms you can count on. Nobody in the category claims it, it answers the customer pulse directly, and PTCL can prove it with commercial decisions. Level 4 is earned from there.",
+    "footnote": "Framework: Brand Meaning Ladder. PTCL levels: ptcl_ladder_levels.csv (hand-classified). Consumer evidence: 976 YouTube comments - self-selected corpus, not a satisfaction measure."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill_name": "review-analysis",
+  "notes": "Prompts only - assertions not yet written. Run these with and without the skill to compare. Eval 3 is the safety-handling case and matters most: the failure mode is either burying an adverse-event signal or sensationalising it.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "https://thevdoctor.com has thousands of customer reviews. Can we pull them and work out what customers are actually complaining about?",
+      "expected_output": "Identifies Loox as the review app, collects the full corpus, reconciles the count against the widget's own histogram, merges duplicate product listings before rating products, and reports pain points ranked by rating gap rather than by mention count. Should explicitly say the 4.87 average is a ceiling effect rather than leading with it as a headline finding.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I've got a CSV of 4,000 Shopify product reviews. What are the pain points and what should I do about them?",
+      "expected_output": "Skips the collection step and goes straight to canonicalising product titles, deterministic theme coding with negated-efficacy tested before positive efficacy, a rating-gap table with a stated minimum-mentions floor, coverage share reported, and a ranked action list. Should not use a model to produce the theme counts.",
+      "files": ["reviews.csv"]
+    },
+    {
+      "id": 3,
+      "prompt": "Our supplement brand's reviews include a few people saying they had a bad reaction. How should we present that to the founder?",
+      "expected_output": "Reports the count plainly without inflating it, frames the reports as what customers wrote rather than as clinical findings, separates claims problems from component defects from adverse reports, and names the owner for each. Should neither bury the signal nor sensationalise it.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Do a competitor review analysis for our category - what do people say about the other brands?",
+      "expected_output": "Recognises that the skill's collection methods read a brand's own public widget, and that competitor coverage means either their public widgets or a third-party source like Trustpilot. Should flag Amazon as out of bounds for scraping and offer the official API instead.",
+      "files": []
+    }
+  ]
+}

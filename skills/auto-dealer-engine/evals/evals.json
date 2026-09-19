@@ -1,0 +1,17 @@
+{
+  "skill_name": "auto-dealer-engine",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Suzuki sent us their dealer lead file for Jan-Jun 2026 (data/clients/suzuki/leads_h1_2026.xlsx). Which dealers are underperforming?",
+      "expected_output": "Reads only Suzuki's folder, checks the file and reconciles with PAMA, builds funnel per dealer, peer groups on catchment/history within Suzuki only, gaps vs peer expected worded as investigations, signals with scope client:suzuki, notes minimum dealers/months.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "can we benchmark hyundai's karachi dealers against suzuki's karachi dealers? we have both files",
+      "expected_output": "Refuses cross-client comparison (group handles both brands) and explains why, offers within-client peer benchmark for each client separately plus public catchment features.",
+      "files": []
+    }
+  ]
+}
