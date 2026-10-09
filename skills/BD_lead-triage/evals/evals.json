@@ -1,0 +1,17 @@
+{
+  "skill_name": "lead-triage",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Prioritise the new leads and build Monday's digest.",
+      "expected_output": "Puts tenders closing within 7 days at the top, then score; writes digest files to exports/ with source links; reports a changelog; asks for owner names instead of inventing them.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Clean up duplicates in the NBP and BankIslami CEO filings.",
+      "expected_output": "Groups same-organisation same-event filings, proposes keeping one primary each, marks others dropped with 'duplicate of <id>' only after confirmation; never deletes rows.",
+      "files": []
+    }
+  ]
+}

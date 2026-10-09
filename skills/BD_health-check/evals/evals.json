@@ -1,0 +1,33 @@
+{
+  "skill_name": "health-check",
+  "evals": [
+    {
+      "id": 1,
+      "name": "morning-run",
+      "prompt": "Did this morning's collection run OK? Anything I should worry about before the BD meeting?",
+      "expected_output": "Runs health_check.py, answers first in plain language, gives last successful run and next scheduled run, mentions expected IMAP warning without alarm, no table of green ticks.",
+      "files": [],
+      "expectations": [
+        "Ran health_check.py",
+        "The report's first line answers whether this morning's collection worked",
+        "Gives the time of the last successful collection and the next scheduled run",
+        "Treats 'IMAP not configured' as expected, not as a failure",
+        "Made no changes (no collection, reclassify, file edits or task changes)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "no-new-leads",
+      "prompt": "No new leads in the dashboard today - is something broken?",
+      "expected_output": "Runs the report, distinguishes 'nothing new published' from a failure using run logs (read vs kept counts), explains with evidence, proposes fixes only if something is wrong.",
+      "files": [],
+      "expectations": [
+        "Ran health_check.py",
+        "Uses run figures (items read vs leads kept/new, last fetch times) to tell 'nothing new published' apart from a failure",
+        "States a clear conclusion with evidence (log line, timestamps or counts)",
+        "Proposes a fix only if something is actually wrong",
+        "Made no changes (no collection, reclassify, file edits or task changes)"
+      ]
+    }
+  ]
+}
