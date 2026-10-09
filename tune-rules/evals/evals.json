@@ -1,0 +1,33 @@
+{
+  "skill_name": "tune-rules",
+  "evals": [
+    {
+      "id": 1,
+      "name": "documentary-animation",
+      "prompt": "BD says we're missing tenders for documentaries and animation videos. Can you make sure those get picked up?",
+      "expected_output": "Searches the raw store for real examples, adds narrow patterns to [agencies].ad, previews with rules_diff.py, adds a test using real titles, runs pytest, applies with reclassify, reports new/dropped/changed with real titles and links.",
+      "files": [],
+      "expectations": [
+        "Searched the stored raw items for real examples before editing the rules",
+        "Edited rules.toml with targeted, phrase-level patterns for documentary/animation work (no bare common words)",
+        "Ran rules_diff.py and reported NEW / DROPPED / CHANGED counts",
+        "Added a test that uses a real title (from a fixture or the raw store), and the full test suite passes",
+        "The report states the effect honestly, including when there are 0 new matches in stored data"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "drop-board-changes",
+      "prompt": "The board_change filings (director resignations, company secretary appointments) are noise for us. Stop them showing up as leads, but keep CEO changes.",
+      "expected_output": "Changes PSX rules in sources.toml (not individual leads), previews the effect, keeps leadership_change filings, lists dropped leads with statuses and asks before marking them dropped, adds a test, reclassifies.",
+      "files": [],
+      "expectations": [
+        "Changed the PSX title rules in sources.toml (or the scoring) rather than editing individual leads",
+        "CEO / president / chief executive change filings still produce leads after the change",
+        "Ran rules_diff.py and listed the dropped leads with their current statuses",
+        "Did not change any lead's status; asked the user before marking dropped leads",
+        "Added a test using real filing titles, and the full test suite passes"
+      ]
+    }
+  ]
+}

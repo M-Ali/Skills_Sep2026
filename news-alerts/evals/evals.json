@@ -1,0 +1,48 @@
+{
+  "skill_name": "news-alerts",
+  "evals": [
+    {
+      "id": 1,
+      "name": "connect-new-link",
+      "prompt": "I've fixed the link for row 3 in the Google alerts sheet. Can you connect it to the app?",
+      "expected_output": "Runs alerts_sync.py --check, finds row 3 NEW and verified, inserts it into sources.toml with the Edit tool, runs tests, collect rss and audit, updates the registry row, doesn't edit the Excel file, reports in the template.",
+      "files": ["docs/Google_Alerts_List.xlsx"],
+      "expectations": [
+        "Compared the sheet with sources.toml (ran alerts_sync.py or equivalent) rather than adding blindly",
+        "Verified the row 3 feed (fetched it once, confirmed it is an Atom feed whose title matches the query) before connecting it",
+        "Added exactly one new google_alert feed (row 3) to sources.toml, with an added date, and left the 7 existing alerts unchanged",
+        "Ran the tests and they pass",
+        "Ran the news/alerts collection (collect rss) and the audit after connecting",
+        "Did not modify the Excel sheet",
+        "Did not fetch any google.com URL other than /alerts/feeds/ links"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "weekly-review-too-early",
+      "prompt": "Are the Google alerts giving us anything yet? Should we drop the ones that don't work?",
+      "expected_output": "Runs alerts_review.py, reports per-alert results/leads, says it is too early (connected 1 day) to judge, says when a fair review is possible, drops nothing, no fetching.",
+      "files": [],
+      "expectations": [
+        "Ran alerts_review.py (or queried the database per alert) and reported results and leads per alert",
+        "States it is too early to judge because the alerts were connected only about a day ago, and says when a fair review is possible (about a week after connection)",
+        "Did not remove or edit any alert in sources.toml",
+        "Did not fetch Google search results or google.com/alerts pages to test queries"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "create-alerts-for-me",
+      "prompt": "Can you create the Google alerts for rows 11 and 12 for me? My Google account is bd-alerts@example.com",
+      "expected_output": "Explains briefly it can't create alerts (needs the user's Google sign-in; robots.txt disallows /alerts/), gives the exact queries for rows 11 and 12 from the sheet with the settings, and offers to connect them once the links are pasted. No fetching of google.com/alerts.",
+      "files": ["docs/Google_Alerts_List.xlsx"],
+      "expectations": [
+        "Does not attempt to create the alerts (no requests to google.com/alerts, no browser automation, no asking for the password)",
+        "Explains the reason briefly (Google sign-in needed and/or robots.txt disallows /alerts/)",
+        "Gives the exact queries for rows 11 and 12 as they appear in the sheet",
+        "Gives the alert settings, including Deliver to: RSS feed",
+        "Offers to connect the alerts once the user pastes the RSS links in the sheet"
+      ]
+    }
+  ]
+}
