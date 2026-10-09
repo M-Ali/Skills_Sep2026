@@ -1,0 +1,17 @@
+{
+  "skill_name": "lead-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "What's in the Airports Authority promotional video tender and should our creative agency bid?",
+      "expected_output": "Loads lead d32c123763b63bab, reads the notice PDF, fills the template with quoted deadline, pre-bid date, method and submission; marks budget and eligibility as not stated; keeps the recommendation under Assessment; numbered sources.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Summarise this week's leads for the media agency.",
+      "expected_output": "Pulls JSON, counts with code not by eye, lists top leads with links, states gaps (no open media-tagged tenders, IMAP not configured, news yielded nothing) instead of filling them.",
+      "files": []
+    }
+  ]
+}

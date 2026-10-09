@@ -1,0 +1,34 @@
+{
+  "skill_name": "add-source",
+  "evals": [
+    {
+      "id": 1,
+      "name": "ajk-portal",
+      "prompt": "Can we add the AJK procurement portal (ajkppra.gov.pk) as a source? Check it and add it if it's worth it.",
+      "expected_output": "Probes the official AJK page, checks robots/access, runs a relevance test on real notices, then either builds a collector (RawItems for every notice, item_to_leads, fixture, tests, registry Live) or records 'Not worth it' with numbers. Report in the skill's format.",
+      "files": [],
+      "expectations": [
+        "Probed the official AJK page and reported the robots.txt / access finding",
+        "Ran a relevance test on real AJK notices and reported matches as a count out of the total checked",
+        "Stated a clear decision (built / not built) with the registry status",
+        "If built: collector stores every notice as a RawItem, has a fixture with URL+date, and the full test suite passes; if not built: registry row updated with evidence and date",
+        "Every notice title quoted in the report is a real title from the AJK site (no invented examples)",
+        "The main project folder was not modified (only the worktree and the outputs folder)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "isdb-check",
+      "prompt": "Someone in BD says the Islamic Development Bank posts tenders we could bid on. Check if we can get those into the app.",
+      "expected_output": "Finds the official IsDB procurement URL from an official page (no guessed domain), checks access and Pakistan/communications relevance, and records the outcome in source_registry.csv with evidence; builds only if allowed and relevant.",
+      "files": [],
+      "expectations": [
+        "Identified the IsDB procurement URL and confirmed it on an official IsDB page (no guessed domain)",
+        "Checked robots.txt / terms / access for that page",
+        "Measured or explained relevance to Pakistan and communications work, with numbers or concrete evidence",
+        "Updated the isdb row in source_registry.csv from Unchecked to a status with evidence and date, and `sources validate` passes",
+        "Built a collector only if access was allowed and relevance was shown"
+      ]
+    }
+  ]
+}
