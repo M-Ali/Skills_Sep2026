@@ -1,0 +1,23 @@
+{
+  "skill_name": "lead-search",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Any media buying or advertising tenders open right now?",
+      "expected_output": "Runs bdleads list with --agency media/ad and --kind tender; reports what is open with deadline and a source link per lead; if nothing matches says so plainly before broadening; no invented tenders or organisations.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Which banks changed their CEO recently? We want to pitch the new heads.",
+      "expected_output": "Uses --kind corporate_announcement --signal leadership_change --sector banking_finance; lists BankIslami and NBP filings with dates and PSX links; does not add names or details not in the filing titles.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I saw on LinkedIn that a dairy brand hired a new CMO, can you log it?",
+      "expected_output": "Asks for the post URL and the post text if missing; uses bdleads add with a verbatim excerpt; does not write the excerpt from memory.",
+      "files": []
+    }
+  ]
+}
